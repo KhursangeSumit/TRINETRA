@@ -1,0 +1,238 @@
+#pageheader.blogheader {
+    background-image: url("blogbanner4.jpg");
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 200px;
+    height: 60vh;
+}
+
+#pageheader p {
+    text-shadow: 2px 2px 2px black;
+    color: white;
+}
+
+#blog {
+    padding: 100px 150px 0 150px;
+}
+
+#blog .blogbox {
+    position: relative;
+    padding-top: 8px;
+    width: 100%;
+    display: flex;
+    margin: 20px 20px;
+}
+
+#blog .blogbox .blogimg {
+    z-index: 1;
+    height: 350px;
+    margin: 20px 30px;
+    padding: 0px;
+}
+
+#blog .blogbox img {
+    margin: 20px;
+    object-fit: cover;
+    height: 300px;
+    width: 500px;
+
+}
+
+.blogdetails {
+    width: 50%;
+    padding-top: 30px;
+}
+
+.blogdetails h4 {
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+h1 {
+    position: absolute;
+    font-size: 70px;
+    z-index: 0;
+    top: 3px;
+    color: rgb(177, 177, 177);
+    left: 33px;
+}
+
+.blogdetails a {
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.blogdetails a::after {
+    content: "";
+    width: 50px;
+    background-color: black;
+    height: 1px;
+    display: flex;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+
+@media(max-width:799px) {
+    #header {
+        width: 100%;
+    }
+
+    #pageheader.blogheader {
+        height: 30vh;
+    }
+
+    #blog {
+        padding: 5px 5px 0 5px;
+        margin-bottom: 60px;
+
+    }
+
+    #blog .blogbox {
+        position: relative;
+        padding-top: 8px;
+        padding-bottom: 0px;
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        margin: 30px auto;
+        height: 250px;
+    }
+
+    #blog .blogbox img {
+        margin: 20px 20px 20px 10px;
+        object-fit: cover;
+        height: 180px;
+        width: 300px;
+        z-index: 1;
+    }
+
+    .blogdetails {
+        width: 50%;
+        padding-top: 30px;
+        margin-right: 20px;
+    }
+
+    .blogdetails h4 {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    h1 {
+        position: absolute;
+        font-size: 30px;
+        z-index: 0;
+        top: 9px;
+        color: rgb(177, 177, 177);
+        left: 45px;
+    }
+
+    .blogdetails a::after {
+
+        width: 30px;
+
+    }
+
+    @media(max-width:380px) {
+        #pageheader.blogheader {
+            background-position: left;
+            padding-right: 200px;
+            text-shadow: 2px 2px 2px black;
+            height: 60vh;
+            padding-left: 30px;
+        }
+
+        #pageheader .content {
+            margin: auto;
+        }
+
+        #pageheader p {
+            width: 100%;
+        }
+
+        #blog {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin: auto;
+            padding: 5px 5px 0 5px;
+            margin-bottom: 40px;
+
+
+        }
+
+        #blog .blogbox {
+            position: relative;
+            padding-top: 8px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
+            margin-top: 30px;
+
+        }
+
+        #blog .blogbox .blogimg {
+            width: 90%;
+
+            margin: 0px 30px 0px 30px;
+
+            z-index: 1;
+            height: 350px;
+            padding: 0px;
+        }
+
+        #blog .blogbox img {
+            object-fit: cover;
+            height: 290px;
+            width: 300px;
+            margin: 0;
+            margin-top: 40px;
+            margin-left: 0;
+
+        }
+
+        .blogdetails {
+            width: 90%;
+            padding-top: 5px;
+            display: block;
+            margin-top: 50px;
+            display: block;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 200px;
+        }
+
+        .blogdetails h4 {
+            margin-top: 20px;
+            font-size: 30px;
+        }
+
+        h1 {
+            position: absolute;
+            font-size: 40px;
+            z-index: 0;
+            top: 9px;
+            color: rgb(177, 177, 177);
+            left: 45px;
+        }
+
+        .blogdetails a::after {
+
+            width: 30px;
+
+        }
+
+    }
+}

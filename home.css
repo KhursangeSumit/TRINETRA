@@ -1,0 +1,1240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #000000;
+    margin: 15px 0 20px 0;
+}
+
+.sectionp1 {
+    padding: 40px 80px;
+}
+
+.sectionm1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+    position: relative;
+}
+
+#logo a {
+    font-size: 36px;
+    font-weight: 900;
+    color: rgb(46, 46, 46);
+}
+
+.menu {
+    display: block;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(red, green, blue, alpha);
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    box-shadow: 1px 1px 2px #000000;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mobile {
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+#navbar li {
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+    transition: all .3s ease;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#close {
+    display: none;
+}
+
+#hero {
+    background-image: url("men.png");
+    background-position: right;
+    background-size: 750px;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(11, 205, 205);
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero p span {
+    color: rgb(0, 0, 0);
+}
+
+#hero h1 {
+    color: #ffee98;
+}
+
+.btn {
+    background-color: #ffee98;
+    padding: 8px 50px;
+    color: rgb(58, 58, 58);
+    font-weight: 900;
+    border-radius: 2px;
+    border: 4px solid #E3E6F3;
+    font-size: 21px;
+}
+
+.btn:hover {
+    background-color: rgb(245, 188, 42);
+    color: white;
+}
+
+#feature {
+    display: flex;
+    justify-content: space-around;
+}
+
+#feature .featurebox {
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    border: 0.1px solid rgb(234, 230, 230);
+    box-shadow: 1px 1px 1px rgb(145, 145, 145);
+}
+
+#feature .featurebox img {
+    height: 160px;
+    width: 170px;
+
+}
+
+#feature .featurebox:hover {
+    box-shadow: 10px 10px 54px rgb(79, 180, 230);
+}
+
+#feature .featurebox:hover:nth-child(2) {
+    box-shadow: 10px 10px 54px rgb(187, 129, 245);
+}
+
+#feature .featurebox:hover:nth-child(3) {
+    box-shadow: 10px 10px 54px rgb(190, 241, 88);
+}
+
+#feature .featurebox:hover:nth-child(4) {
+    box-shadow: 10px 10px 54px rgb(92, 152, 254);
+}
+
+#feature .featurebox:hover:nth-child(5) {
+    box-shadow: 10px 10px 54px rgb(247, 66, 0);
+}
+
+#feature .featurebox:hover:nth-child(6) {
+    box-shadow: 10px 10px 54px rgb(6, 249, 172);
+}
+
+#feature .featurebox h6 {
+    font-size: 18px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #73abef;
+    padding: 5px;
+    margin: 5px;
+}
+
+#feature .featurebox:nth-child(2) h6 {
+    background-color: rgb(167, 130, 248);
+}
+
+#feature .featurebox:nth-child(3) h6 {
+    background-color: rgb(158, 201, 90);
+}
+
+#feature .featurebox:nth-child(4) h6 {
+    background-color: rgb(62, 91, 210);
+}
+
+#feature .featurebox:nth-child(5) h6 {
+    background-color: rgb(255, 87, 3);
+}
+
+#feature .featurebox:nth-child(6) h6 {
+    background-color: rgb(5, 178, 123);
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro {
+    border: 2px solid rgb(255, 255, 255);
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 8px;
+    flex-wrap: wrap;
+    background-color: #E3E6F3;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px gray;
+    margin: 15px 2px;
+    transition: .5s ease;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgb(69, 69, 69);
+}
+
+#product1 .procontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro img {
+    height: 240px;
+    width: 240px;
+    border-radius: 10px;
+    border: 1px solid rgb(237, 231, 231);
+}
+
+#product1 .pro .discription {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .discription span {
+    font-size: 12px;
+}
+
+#product1 .pro .discription h6 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 12px;
+}
+
+#product1 .pro .discription i {
+    color: #ffbe00;
+}
+
+#product1 .pro .discription h4 {
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 7px;
+    color: rgba(4, 69, 28, 0.884);
+}
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #f1f5ffd4;
+    color: black;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#banner {
+    /* background-image: url("banner.jpg"); */
+    background-image: linear-gradient(skyblue, rgb(255, 255, 255));
+    background-position: center;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner h4 {
+    color: yellow;
+    text-shadow: 4px 2px 2px rgb(0, 0, 0);
+    font-size: 22px;
+    margin: 10px;
+}
+
+#banner h2 {
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 2px 2px rgb(255, 255, 255);
+}
+
+#banner button {
+    background-color: #ffee98;
+    padding: 8px 50px;
+    color: rgb(58, 58, 58);
+    font-weight: 900;
+    border-radius: 2px;
+    border: 2px solid #ffffff;
+    font-size: 21px;
+    margin: 15px 0px;
+}
+
+#banner button:hover {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+}
+
+#banner h2 span {
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 2px 2px black;
+}
+
+#smbanner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+#smbanner .bannerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("banner4.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-width: 610px;
+    height: 50vh;
+    padding: 30px;
+}
+
+#smbanner .bannerbox2 {
+    background-image: url("banner3.jpg");
+}
+
+#smbanner h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+#smbanner h2 {
+    color: white;
+    font-size: 38px;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px black;
+}
+
+#smbanner span {
+    color: white;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#smbanner button {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .2s ease;
+    text-shadow: 1px 1px 1px black;
+}
+
+#smbanner button:hover {
+    background-color: rgb(234, 112, 68);
+    border: 2px solid rgb(234, 112, 68);
+}
+
+#textbanner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+    margin-bottom: 40px;
+}
+
+#textbanner .bannerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("banner1.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-width: 32%;
+    height: 30vh;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+#textbanner .bb3 {
+    background-image: url("banner2.jpg");
+}
+
+#textbanner .bb2 {
+    background-image: url("banner5.jpg");
+}
+
+#textbanner h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#textbanner h3 {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px white;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    background-image: linear-gradient(white, skyblue);
+    height: 30vh;
+}
+
+#newsletter h4 {
+    font-size: 29px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 23, 46);
+}
+
+#newsletter p span {
+    color: rgb(255, 230, 0);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+#newsletter button {
+    padding: 0 1.25em;
+    height: 3.125rem;
+    font-size: 14px;
+    border: none;
+    width: 8rem;
+    background-color: #27c7bd;
+    white-space: nowrap;
+    font-weight: 600;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer #logo {
+    font-size: 34px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(48, 68, 255);
+
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer img {
+    height: 100px;
+    width: 200px;
+}
+
+footer .payment {
+    width: 330px;
+    height: 120px;
+}
+
+footer h4 {
+    font-size: 21px;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+footer p {
+    margin: 5px 0 8px 0;
+}
+
+footer a {
+    font: 21px;
+    text-decoration: none;
+    margin: 5px 0 8px 0;
+    color: black;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #19600c;
+    padding-right: 4px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+footer .install .row img {
+    /* border: 1px solid black;
+    border-radius: 6px;
+    background-color: rgb(57, 50, 50); */
+}
+
+footer .follow i:hover {
+    color: #1aa003;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+@media(max-width:799px) {
+    .sectionp1 {
+        padding: 40px 30px;
+    }
+
+    .sectionm1 {
+        margin: 20px 0px;
+    }
+
+    #logo a {
+        font-size: 34px;
+        font-weight: 800;
+    }
+
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 50px;
+        height: 10vh;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+
+    #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navbar li {
+        padding: 5px 0px;
+        margin: 0px 12px;
+    }
+
+    #navbar li a.active::after,
+    #navbar li a:hover::after {
+        left: 0px;
+        width: 40%;
+    }
+
+    #hero {
+        background-image: url("hero4.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #hero h4 {
+        padding-bottom: 10px;
+        color: white;
+    }
+
+    #hero h2 {
+        color: rgb(255, 255, 255);
+    }
+
+    #hero h1 {
+        color: rgb(84, 78, 255);
+        text-shadow: 2px 2px 2px black;
+    }
+
+    #hero p {
+        color: white;
+    }
+
+    #hero p span {
+        color: yellow;
+    }
+
+    #hero button {
+        background-color: #002d8e;
+        color: white;
+    }
+
+    #hero button:hover {
+        background-color: rgb(9, 7, 72);
+        color: white;
+    }
+
+
+    #feature {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #feature .featurebox {
+        padding: 8px 11px;
+        margin: 15px 10px;
+    }
+
+    #feature .featurebox img {
+        height: 150px;
+        width: 170px;
+    }
+
+    #product1 {
+        text-align: center;
+    }
+
+
+    #product1 .pro {
+        width: 45%;
+    }
+
+    #product1 .pro img {
+        height: 260px;
+        width: 260px;
+    }
+
+    #product1 .pro .discription {
+        padding: 5px 0;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #banner h4 {
+        font-size: 18px;
+        margin: 7px;
+    }
+
+    #banner h2 {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    #banner button {
+        padding: 8px 30px;
+    }
+
+    #banner {
+        height: 25vh;
+    }
+
+    #banner h4 {
+        color: yellow;
+        text-shadow: 4px 2px 2px rgb(0, 0, 0);
+        font-size: 22px;
+        margin: 10px;
+    }
+
+    #banner h2 {
+        color: rgb(0, 0, 0);
+        text-shadow: 4px 2px 2px rgb(255, 255, 255);
+    }
+
+    #banner button {
+        background-color: #ffee98;
+        padding: 8px 50px;
+        color: rgb(58, 58, 58);
+        font-weight: 900;
+        border-radius: 2px;
+        border: 2px solid #ffffff;
+        font-size: 21px;
+        margin: 15px 0px;
+    }
+
+    #banner button:hover {
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        border: 2px solid black;
+    }
+
+    #banner h2 span {
+        color: rgb(255, 255, 255);
+        text-shadow: 4px 2px 2px black;
+    }
+
+    #smbanner {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        margin: 0 40px;
+    }
+
+    #smbanner .bannerbox {
+        height: 20vh;
+        min-width: 340px;
+        margin: 10px;
+        padding: 10px 20px;
+    }
+
+    #smbanner h4 {
+        font-size: 12px;
+    }
+
+    #smbanner h2 {
+
+        font-size: 20px;
+        font-weight: 700;
+        color: yellow;
+        line-height: 30px;
+    }
+
+    #smbanner span {
+        color: white;
+        font-weight: 500;
+        padding-bottom: 15px;
+        font-size: 10px;
+    }
+
+    #smbanner button {
+        padding: 3px 6px;
+        font-size: 12px;
+    }
+
+
+    #textbanner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 40px;
+        margin-bottom: 40px;
+    }
+
+    #textbanner .bannerbox {
+        width: 20%;
+        height: 15vh;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+
+    #textbanner h2 {
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    #textbanner h3 {
+        font-weight: 700;
+        font-size: 10px;
+    }
+
+
+    #newsletter {
+        height: 20vh;
+        display: block;
+    }
+
+    #newsletter h4 {
+        font-size: 29px;
+    }
+
+    #newsletter p {
+        font-size: 16px;
+    }
+
+    #newsletter input {
+        height: 3.125rem;
+        padding: 0 1.35em;
+        font-size: 16px;
+    }
+
+    #newsletter button {
+        padding: 0 1.35em;
+        font-size: 16px;
+    }
+
+    #newsletter .form {
+        width: 70%;
+    }
+
+    footer .sectionp1 {
+        padding: 20px 20px;
+    }
+
+    footer .col {
+        width: 31%;
+    }
+
+    footer .col:nth-child(1) {
+        width: 100%;
+    }
+
+    footer img {
+        height: 70px;
+        width: 170px;
+    }
+
+    footer .payment {
+        width: 200px;
+        height: 90px;
+    }
+
+    footer .copyright {
+        width: 100%;
+        text-align: center;
+    }
+
+    @media(max-width:380px) {
+        .sectionp1 {
+            padding: 20px 20px;
+        }
+
+        #logo a {
+            font-size: 25px;
+            font-weight: 800;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0px 15px 14px;
+            height: 10vh;
+            position: sticky;
+            top: 0;
+            left: 0;
+
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            position: fixed;
+            top: 0;
+            right: -240px;
+            width: 240px;
+            height: 100vh;
+            background-color: orange;
+            border-bottom-left-radius: 90px;
+            padding: 80px 15px 0 20px;
+            transition: .8s;
+        }
+
+        #navbar.active {
+            right: 0px;
+        }
+
+        #navbar.deactive {
+            right: -240px;
+        }
+
+        #navbar #shopbag {
+            display: none;
+        }
+
+        #mobile {
+            display: block;
+            font-size: 30px;
+            font-weight: 900;
+            margin-right: 20px;
+        }
+
+        #close {
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+            font-weight: 900;
+            color: black;
+        }
+
+        #navbar li {
+            padding: 0 12px;
+            line-height: 15px;
+            margin: 15px 10px;
+        }
+
+        #navbar li a.active::after,
+        #navbar li a:hover::after {
+            left: 15px;
+        }
+
+        #hero {
+            background-image: url("iphone.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px 30px;
+        }
+
+        #hero h4 {
+            padding-bottom: 10px;
+            color: white;
+            line-height: 10px;
+        }
+
+        #hero h2 {
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+        }
+
+        #hero h1 {
+            color: rgb(250, 227, 16);
+            text-shadow: 2px 2px 2px black;
+            font-size: 38px;
+            line-height: 25px;
+        }
+
+        #hero p {
+            color: white;
+        }
+
+        #hero p span {
+            color: yellow;
+        }
+
+        #hero button {
+            background-color: rgb(90, 90, 90);
+            color: white;
+            padding: 5px 20px;
+        }
+
+        #hero button:hover {
+            background-color: transparent;
+            color: white;
+        }
+
+
+        #feature {
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        #feature .featurebox {
+            padding: 8px 11px;
+            margin: 15px 10px;
+        }
+
+        #feature .featurebox img {
+            height: 200px;
+            width: 250px;
+        }
+
+        #product1 {
+            text-align: center;
+        }
+
+
+        #product1 .pro {
+            width: 100%;
+        }
+
+        #product1 .pro img {
+            height: 260px;
+            width: 280px;
+        }
+
+        #product1 .pro .discription {
+            padding: 5px 15px;
+        }
+
+        #banner {
+            height: 25vh;
+        }
+
+        #banner h4 {
+            color: yellow;
+            text-shadow: 4px 2px 2px rgb(0, 0, 0);
+            font-size: 15px;
+            margin: 10px;
+            line-height: 10px;
+        }
+
+        #banner h2 {
+            color: rgb(0, 0, 0);
+            text-shadow: 4px 2px 2px rgb(255, 255, 255);
+            font-size: 18px;
+            line-height: 23px;
+            text-align: center;
+        }
+
+        #banner button {
+            background-color: #ffee98;
+            padding: 5px 10px;
+            color: rgb(58, 58, 58);
+            font-weight: 900;
+            border-radius: 2px;
+            border: 2px solid #ffffff;
+            font-size: 7px;
+            margin: 10px 0px;
+        }
+
+        #banner button:hover {
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+            border: 2px solid black;
+        }
+
+        #banner h2 span {
+            color: rgb(255, 255, 255);
+            text-shadow: 4px 2px 2px black;
+        }
+
+        #smbanner {
+            flex-wrap: wrap;
+        }
+
+        #smbanner .bannerbox {
+            height: 20vh;
+            min-width: 290px;
+            margin: 5px;
+            padding: 40px 10px 10px 10px;
+        }
+
+        #smbanner h4 {
+            font-size: 8px;
+        }
+
+        #smbanner h2 {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        #smbanner span {
+            padding-bottom: 10px;
+            font-size: 10px;
+            line-height: 10px;
+        }
+
+        #smbanner button {
+            padding: 3px 6px;
+            font-size: 12px;
+            line-height: 10px;
+            margin: 0;
+        }
+
+
+        #textbanner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 40px;
+            margin-bottom: 20px;
+        }
+
+        #textbanner .bannerbox {
+            width: 20%;
+            height: 15vh;
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+
+        #textbanner h2 {
+            font-weight: 800;
+            font-size: 8px;
+            line-height: 10px;
+        }
+
+        #textbanner h3 {
+            font-weight: 700;
+            font-size: 5px;
+        }
+
+        #newsletter {
+            height: 20vh;
+            display: block;
+        }
+
+        #newsletter h4 {
+            font-size: 14px;
+        }
+
+        #newsletter p {
+            font-size: 10px;
+            line-height: 5px;
+        }
+
+        #newsletter input {
+            height: 1.925rem;
+            padding: 0 1.35em;
+            font-size: 10px;
+        }
+
+        #newsletter button {
+            padding: 0 1.35em;
+            height: 1.925rem;
+            font-size: 10px;
+            margin: 0;
+        }
+
+        #newsletter .form {
+            width: 70%;
+        }
+
+        footer .sectionp1 {
+            padding: 20px 20px;
+        }
+
+        footer #logo {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        footer .col {
+            width: 30%;
+        }
+
+        footer .col p {
+            font-size: 10px;
+            line-height: 5px;
+        }
+
+        footer .col h4 {
+            font-size: 12px;
+            padding-bottom: 10px;
+        }
+
+        footer .follow i {
+            font-size: 15px;
+        }
+
+        footer .col a {
+            font-size: 10px;
+            margin: 3px 0 3px 0;
+        }
+
+        footer .col:nth-child(1) {
+            width: 100%;
+        }
+
+        footer img {
+            height: 30px;
+            width: 70px;
+            margin: 0px;
+            padding: 0;
+        }
+
+        footer .payment {
+            width: 110px;
+            height: 45px;
+        }
+
+        footer .copyright p {
+            width: 100%;
+            font-size: 8px;
+            text-align: center;
+        }
+
+        footer .install p {
+            font-size: 10px;
+            line-height: 10px;
+        }
+    }
+}
