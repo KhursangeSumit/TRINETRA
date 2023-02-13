@@ -118,7 +118,7 @@ body {
 }
 
 #hero {
-    background-image: url("men.png");
+    background-image: url("img/men.png");
     background-position: right;
     background-size: 750px;
     background-repeat: no-repeat;
@@ -369,7 +369,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("banner4.jpg");
+    background-image: url("img/banner4.jpg");
     background-position: center;
     background-size: cover;
     color: white;
@@ -379,7 +379,7 @@ body {
 }
 
 #smbanner .bannerbox2 {
-    background-image: url("banner3.jpg");
+    background-image: url("img/banner3.jpg");
 }
 
 #smbanner h4 {
@@ -430,7 +430,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("banner1.jpg");
+    background-image: url("img/banner1.jpg");
     background-position: center;
     background-size: cover;
     color: white;
@@ -441,11 +441,11 @@ body {
 }
 
 #textbanner .bb3 {
-    background-image: url("banner2.jpg");
+    background-image: url("img/banner2.jpg");
 }
 
 #textbanner .bb2 {
-    background-image: url("banner5.jpg");
+    background-image: url("img/banner5.jpg");
 }
 
 #textbanner h2 {
@@ -640,7 +640,7 @@ footer .copyright {
     }
 
     #hero {
-        background-image: url("hero4.jpg");
+        background-image: url("img/hero4.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -967,7 +967,7 @@ footer .copyright {
         }
 
         #hero {
-            background-image: url("iphone.jpg");
+            background-image: url("img/iphone.jpg");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
