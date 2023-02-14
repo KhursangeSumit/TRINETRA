@@ -52,7 +52,8 @@
     }
 }
 
-@media(max-width:380px) {
+@media screen and (max-width: 995px),
+screen and (max-height: 700px) {
     #pageheader {
 
         align-items: flex-start;

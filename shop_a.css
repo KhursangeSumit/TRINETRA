@@ -132,7 +132,8 @@
     }
 }
 
-@media(max-width:399px) {
+@media screen and (max-width: 995px),
+screen and (max-height: 700px) {
     #prodetails {
         width: 100%;
         display: flex;

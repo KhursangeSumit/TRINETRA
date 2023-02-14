@@ -142,7 +142,8 @@
     }
 }
 
-@media (max-width:380px) {
+@media screen and (max-width: 995px),
+screen and (max-height: 700px) {
     #cart table img {
         width: 20px;
     }
